@@ -42,7 +42,7 @@ Tudo é estático: zero configuração de servidor.
 Tudo abaixo está marcado e fácil de achar no `index.html`.
 
 ### 1. Domínio (busca e substitui)
-Troque `https://matheusmoura.co/` pelo seu domínio final em **todo** o arquivo
+Troque `https://www.matheusmoura.com.br/` pelo seu domínio final em **todo** o arquivo
 (`index.html`, `sitemap.xml`, `robots.txt`). Afeta canonical, Open Graph, Twitter e os dados estruturados.
 
 ### 2. Cases — seção **Provas** (`id="provas"`)

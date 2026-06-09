@@ -12,16 +12,16 @@
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="theme-color" content="#0D0D0D" />
 <meta name="color-scheme" content="dark" />
-<link rel="canonical" href="https://matheusmoura.co/" />
+<link rel="canonical" href="https://www.matheusmoura.com.br/" />
 
 <!-- ============ OPEN GRAPH ============ -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Matheus Moura · Método Tração" />
 <meta property="og:title" content="A maioria acelera. Quase ninguém ganha tração." />
 <meta property="og:description" content="Eu monto a presença digital de quem quer virar referência no nicho. Estratégia, roteiro e layout prontos. Você só grava e posta." />
-<meta property="og:url" content="https://matheusmoura.co/" />
+<meta property="og:url" content="https://www.matheusmoura.com.br/" />
 <meta property="og:locale" content="pt_BR" />
-<meta property="og:image" content="https://matheusmoura.co/assets/og-image.jpg" />
+<meta property="og:image" content="https://www.matheusmoura.com.br/assets/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Matheus Moura · Método Tração. A maioria acelera, quase ninguém ganha tração." />
@@ -30,7 +30,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Matheus Moura · Método Tração" />
 <meta name="twitter:description" content="Presença digital que tira o perfil do lugar: das pessoas certas chegando até o cliente fechando." />
-<meta name="twitter:image" content="https://matheusmoura.co/assets/og-image.jpg" />
+<meta name="twitter:image" content="https://www.matheusmoura.com.br/assets/og-image.jpg" />
 
 <!-- ============ ÍCONES ============ -->
 <link rel="icon" href="/assets/favicon.ico" sizes="any" />
@@ -50,11 +50,11 @@
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://matheusmoura.co/#matheus",
+      "@id": "https://www.matheusmoura.com.br/#matheus",
       "name": "Matheus Moura",
       "alternateName": "@matheusmoura.co",
-      "url": "https://matheusmoura.co/",
-      "image": "https://matheusmoura.co/assets/avatar-ring.png",
+      "url": "https://www.matheusmoura.com.br/",
+      "image": "https://www.matheusmoura.com.br/assets/avatar-ring.png",
       "jobTitle": "Arquiteto de presença digital",
       "description": "Operador de marketing e dono de agência que monta a presença digital de profissionais e empresas que querem virar referência no próprio nicho. Criador do Método Tração.",
       "knowsAbout": ["Presença digital", "Marca pessoal", "Posicionamento de marca", "Estratégia de conteúdo", "Instagram para autoridade", "Funil de conversão", "Método Tração", "Mentoria de presença digital"],
@@ -69,11 +69,11 @@
     },
     {
       "@type": "Service",
-      "@id": "https://matheusmoura.co/#metodo-tracao",
+      "@id": "https://www.matheusmoura.com.br/#metodo-tracao",
       "name": "Método Tração",
       "slogan": "Saia do lugar: das pessoas certas chegando até o cliente fechando.",
       "serviceType": "Mentoria de presença digital com implementação",
-      "provider": { "@id": "https://matheusmoura.co/#matheus" },
+      "provider": { "@id": "https://www.matheusmoura.com.br/#matheus" },
       "areaServed": { "@type": "Country", "name": "Brasil" },
       "audience": {
         "@type": "Audience",
@@ -99,17 +99,17 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://matheusmoura.co/#website",
-      "url": "https://matheusmoura.co/",
+      "@id": "https://www.matheusmoura.com.br/#website",
+      "url": "https://www.matheusmoura.com.br/",
       "name": "Matheus Moura · Método Tração",
       "inLanguage": "pt-BR",
-      "publisher": { "@id": "https://matheusmoura.co/#matheus" }
+      "publisher": { "@id": "https://www.matheusmoura.com.br/#matheus" }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://matheusmoura.co/#faq",
+      "@id": "https://www.matheusmoura.com.br/#faq",
       "inLanguage": "pt-BR",
-      "about": { "@id": "https://matheusmoura.co/#matheus" },
+      "about": { "@id": "https://www.matheusmoura.com.br/#matheus" },
       "mainEntity": [
         {
           "@type": "Question",
@@ -307,13 +307,12 @@ h1.hero-h .l3{position:relative}
 @keyframes drop{0%{top:-34px}60%,100%{top:34px}}
 
 /* ====================== MARQUEE ====================== */
-.marquee{border-block:1px solid var(--line);background:var(--ink-2);overflow:hidden;padding:18px 0}
-.marquee-t{display:flex;gap:0;white-space:nowrap;width:max-content;animation:scrollx 30s linear infinite;font-family:var(--display);font-weight:500;font-size:clamp(12px,1.3vw,16px);letter-spacing:.04em}
+.marquee{border-block:1px solid var(--line);background:var(--ink-2);overflow:hidden;padding:18px 0;display:flex}
+.marquee-t{display:flex;flex-shrink:0;align-items:center;justify-content:space-around;min-width:100%;white-space:nowrap;animation:scrollx 38s linear infinite;font-family:var(--display);font-weight:500;font-size:clamp(12px,1.3vw,16px);letter-spacing:.04em}
 .marquee:hover .marquee-t{animation-play-state:paused}
 .marquee-t span{padding:0 28px;color:var(--paper)}
 .marquee-t .sep{color:var(--orange);padding:0 4px}
-.marquee-t .gh{-webkit-text-stroke:1px var(--ghost);color:transparent}
-@keyframes scrollx{to{transform:translateX(-50%)}}
+@keyframes scrollx{to{transform:translateX(-100%)}}
 @media (prefers-reduced-motion:reduce){.marquee-t{animation:none}}
 
 /* ====================== SEÇÃO CLARA (problema) ====================== */
@@ -574,11 +573,8 @@ footer{border-top:1px solid var(--line);padding-block:60px 40px;background:var(-
 
 <!-- ============ MARQUEE ============ -->
 <div class="marquee" aria-hidden="true">
-  <div class="marquee-t">
-    <span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span class="gh">Tração</span><span class="sep">✦</span>
-    <span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span class="gh">Tração</span><span class="sep">✦</span>
-    <span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span class="gh">Tração</span><span class="sep">✦</span>
-  </div>
+  <div class="marquee-t"><span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span>Tração</span><span class="sep">✦</span><span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span>Tração</span><span class="sep">✦</span><span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span>Tração</span><span class="sep">✦</span><span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span>Tração</span><span class="sep">✦</span><span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span>Tração</span><span class="sep">✦</span></div>
+  <div class="marquee-t"><span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span>Tração</span><span class="sep">✦</span><span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span>Tração</span><span class="sep">✦</span><span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span>Tração</span><span class="sep">✦</span><span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span>Tração</span><span class="sep">✦</span><span>Direção</span><span class="sep">✦</span><span>Ignição</span><span class="sep">✦</span><span>Aceleração</span><span class="sep">✦</span><span>Tração</span><span class="sep">✦</span></div>
 </div>
 
 <!-- ============ PROBLEMA ============ -->

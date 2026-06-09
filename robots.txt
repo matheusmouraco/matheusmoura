@@ -27,4 +27,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://matheusmoura.co/sitemap.xml
+Sitemap: https://www.matheusmoura.com.br/sitemap.xml

@@ -158,3 +158,55 @@ body::before{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;
   .counter .meter{width:90px}
   .doc-hero .lead{padding-left:16px}
 }
+
+/* ===================== compartilhado: manuais de conteúdo ===================== */
+.intro{font-size:clamp(17px,2.2vw,20px);line-height:1.6;color:var(--dim)}
+.intro b{color:var(--paper)}
+.gh{font-family:var(--display);font-weight:600;font-size:clamp(24px,4.4vw,36px);letter-spacing:-0.03em;line-height:1.1;margin:0 0 14px}
+.gh .o{color:var(--orange)}
+.gp{color:var(--dim);font-size:16px;line-height:1.7;margin-bottom:12px}
+.gp b{color:var(--paper)}
+.def{background:var(--glass);backdrop-filter:saturate(150%) blur(14px);-webkit-backdrop-filter:saturate(150%) blur(14px);border:1px solid var(--glass-brd);border-left:3px solid var(--orange);border-radius:14px;box-shadow:var(--glass-hi);padding:clamp(20px,4vw,28px);font-size:clamp(17px,2.2vw,21px);line-height:1.55;color:var(--paper)}
+.def b{color:var(--orange);font-weight:600}
+.quote{font-family:var(--display);font-weight:600;font-size:clamp(20px,3.2vw,28px);letter-spacing:-0.025em;line-height:1.2;color:var(--paper);border-left:3px solid var(--orange);padding-left:20px;margin:6px 0}
+.quote .o{color:var(--orange)}
+.glist{list-style:none;margin:8px 0 0;display:flex;flex-direction:column;gap:12px}
+.glist li{position:relative;padding-left:30px;color:var(--dim);font-size:15.5px;line-height:1.55}
+.glist li b{color:var(--paper);font-weight:600}
+.glist li svg{position:absolute;left:0;top:2px}
+/* bloco gatilho / gancho */
+.gat{background:var(--glass);backdrop-filter:saturate(150%) blur(14px);-webkit-backdrop-filter:saturate(150%) blur(14px);border:1px solid var(--glass-brd);border-radius:16px;box-shadow:var(--glass-hi);padding:clamp(20px,3.6vw,26px);margin-bottom:15px;position:relative;overflow:hidden}
+.gat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--orange),var(--orange-2))}
+.gat .gat-n{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--orange)}
+.gat .gat-t{font-family:var(--display);font-weight:600;font-size:clamp(18px,3vw,23px);letter-spacing:-0.02em;margin-top:4px;line-height:1.15}
+.gat .gat-d{color:var(--dim);font-size:14.5px;margin-top:9px;line-height:1.55}
+.gat .struct{margin-top:13px;font-family:var(--mono);font-size:13px;color:var(--paper);background:rgba(255,77,0,.07);border:1px solid var(--orange-soft);border-radius:10px;padding:12px 14px;line-height:1.55}
+.gat .struct b{color:var(--orange)}
+.gat .ex{margin-top:12px;display:flex;flex-direction:column;gap:7px}
+.gat .ex .e{font-size:14px;color:var(--paper);padding:10px 13px;background:var(--ink-2);border:1px solid var(--line);border-radius:9px;line-height:1.45}
+.gat .ex .e i{font-style:normal;color:var(--dim)}
+/* tabela comparativa */
+.cmp{width:100%;border-collapse:separate;border-spacing:0;margin-top:6px;font-size:14.5px;border:1px solid var(--glass-brd);border-radius:14px;overflow:hidden}
+.cmp th,.cmp td{text-align:left;padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+.cmp thead th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);background:rgba(245,241,234,.03)}
+.cmp thead th.o{color:var(--orange)}
+.cmp tbody th{font-family:var(--mono);font-size:12px;color:var(--dim);font-weight:500;width:26%}
+.cmp td{color:var(--paper)}
+.cmp td.dim{color:var(--dim)}
+.cmp tr:last-child th,.cmp tr:last-child td{border-bottom:none}
+/* CTA whatsapp (isca -> contratar) */
+.wa{position:relative;overflow:hidden;background:linear-gradient(150deg,rgba(255,77,0,.16),rgba(255,77,0,.04));border:1px solid rgba(255,106,43,.34);border-radius:20px;box-shadow:inset 0 1px 0 rgba(255,170,130,.2);padding:clamp(28px,5vw,42px);text-align:center}
+.wa h3{font-family:var(--display);font-weight:600;font-size:clamp(23px,4vw,32px);letter-spacing:-0.03em;line-height:1.1;color:var(--paper)}
+.wa h3 .o{color:var(--orange)}
+.wa p{color:var(--dim);font-size:16px;line-height:1.6;max-width:50ch;margin:13px auto 0}
+.wa-btn{display:inline-flex;align-items:center;gap:11px;margin-top:24px;background:var(--orange);color:#fff;font-family:var(--sans);font-weight:700;font-size:16px;padding:17px 30px;border-radius:50px;transition:transform .35s var(--ease),box-shadow .35s;box-shadow:0 14px 36px -12px rgba(255,77,0,.6)}
+.wa-btn:hover{transform:translateY(-2px);box-shadow:0 22px 46px -12px rgba(255,77,0,.7)}
+.wa-note{margin-top:15px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--faint)}
+/* faq accordion nativo */
+.faqg{border-top:1px solid var(--line)}
+.faqg details{border-bottom:1px solid var(--line)}
+.faqg summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:21px 0;font-family:var(--sans);font-weight:600;font-size:clamp(16px,2vw,18px);color:var(--paper)}
+.faqg summary::-webkit-details-marker{display:none}
+.faqg summary::after{content:"+";color:var(--orange);font-size:24px;font-weight:400;transition:transform .3s}
+.faqg details[open] summary::after{transform:rotate(45deg)}
+.faqg .fa{padding-bottom:21px;color:var(--dim);font-size:15px;line-height:1.65;max-width:64ch}

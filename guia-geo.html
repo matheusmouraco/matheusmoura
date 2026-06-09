@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>O que é GEO e por que seu site precisa disso | Matheus Moura</title>
+<meta name="description" content="GEO (Generative Engine Optimization) é a otimização do seu site para ser citado por IAs como ChatGPT, Gemini e Perplexity. Entenda o que é, por que importa e como aplicar." />
+<meta name="keywords" content="GEO, Generative Engine Optimization, otimização para IA, ChatGPT, Perplexity, AI Overviews, SEO, citação por IA" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<meta name="author" content="Matheus Moura" />
+<meta name="theme-color" content="#0D0D0D" />
+<meta name="color-scheme" content="dark" />
+<link rel="canonical" href="https://matheusmoura.co/guia-geo.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="O que é GEO e por que seu site precisa disso" />
+<meta property="og:description" content="GEO é o novo SEO: otimizar seu site para ser a resposta que a IA cita. Entenda em 4 minutos." />
+<meta property="og:url" content="https://matheusmoura.co/guia-geo.html" />
+<meta property="og:image" content="https://matheusmoura.co/assets/og-image.jpg" />
+<meta property="og:locale" content="pt_BR" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="/assets/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+<link rel="preload" href="/assets/fonts/geist-600.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/assets/manual.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://matheusmoura.co/guia-geo.html#article",
+      "headline": "O que é GEO e por que seu site precisa disso",
+      "description": "GEO (Generative Engine Optimization) é a otimização de um site para ser lido, entendido e citado por motores de inteligência artificial como ChatGPT, Gemini, Perplexity e o Google AI Overviews.",
+      "inLanguage": "pt-BR",
+      "url": "https://matheusmoura.co/guia-geo.html",
+      "image": "https://matheusmoura.co/assets/og-image.jpg",
+      "author": { "@type": "Person", "name": "Matheus Moura", "url": "https://matheusmoura.co/" },
+      "publisher": { "@type": "Person", "name": "Matheus Moura" },
+      "mainEntityOfPage": "https://matheusmoura.co/guia-geo.html",
+      "about": { "@type": "Thing", "name": "Generative Engine Optimization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://matheusmoura.co/guia-geo.html#faq",
+      "inLanguage": "pt-BR",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é GEO?",
+          "acceptedAnswer": { "@type": "Answer", "text": "GEO (Generative Engine Optimization) é a otimização de um site para ser lido, entendido e citado pelos motores de inteligência artificial, como ChatGPT, Gemini, Perplexity, Claude e o Google AI Overviews. É o equivalente ao SEO, mas para quando a pessoa pergunta a uma IA em vez de pesquisar no Google." }
+        },
+        {
+          "@type": "Question",
+          "name": "GEO substitui o SEO?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não. O GEO anda junto com o SEO. O SEO continua valendo para o Google tradicional; o GEO garante que a IA também encontre e cite o seu site. As duas frentes usam a mesma base técnica e se reforçam." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo leva para ver resultado com GEO?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Algumas semanas. As IAs precisam re-rastrear e reindexar o site depois das alterações. A otimização constrói a fundação; os resultados aparecem conforme os robôs voltam e encontram a entidade clara e o conteúdo citável." }
+        },
+        {
+          "@type": "Question",
+          "name": "Qualquer site pode ser otimizado para GEO?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. Sites institucionais, lojas, portfólios e páginas de profissionais podem ser otimizados para GEO. O essencial é ter o conteúdo importante em texto legível, dados estruturados corretos e os robôs de IA liberados." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  .geo-meta{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--faint);margin-top:16px}
+  .def{background:var(--glass);backdrop-filter:saturate(150%) blur(14px);-webkit-backdrop-filter:saturate(150%) blur(14px);border:1px solid var(--glass-brd);border-left:3px solid var(--orange);border-radius:14px;box-shadow:var(--glass-hi);padding:clamp(22px,4vw,30px);font-size:clamp(18px,2.2vw,22px);line-height:1.55;color:var(--paper)}
+  .def b{color:var(--orange);font-weight:600}
+  h2.gh{font-family:var(--display);font-weight:600;font-size:clamp(26px,4.4vw,38px);letter-spacing:-0.03em;line-height:1.08;margin:0 0 16px}
+  h2.gh .o{color:var(--orange)}
+  .gp{color:var(--dim);font-size:16.5px;line-height:1.7;margin-bottom:14px}
+  .gp b{color:var(--paper)}
+  .quote{font-family:var(--display);font-weight:600;font-size:clamp(22px,3.4vw,30px);letter-spacing:-0.025em;line-height:1.2;color:var(--paper);border-left:3px solid var(--orange);padding-left:22px;margin:8px 0}
+  .quote .o{color:var(--orange)}
+  ul.glist{list-style:none;margin:8px 0 0;display:flex;flex-direction:column;gap:13px}
+  ul.glist li{position:relative;padding-left:30px;color:var(--dim);font-size:16px;line-height:1.55}
+  ul.glist li b{color:var(--paper);font-weight:600}
+  ul.glist li svg{position:absolute;left:0;top:2px}
+  /* tabela GEO vs SEO */
+  .cmp{width:100%;border-collapse:separate;border-spacing:0;margin-top:6px;font-size:15px;border:1px solid var(--glass-brd);border-radius:14px;overflow:hidden}
+  .cmp th,.cmp td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+  .cmp thead th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);background:rgba(245,241,234,.03)}
+  .cmp thead th.o{color:var(--orange)}
+  .cmp tbody th{font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--dim);font-weight:500;width:30%}
+  .cmp td{color:var(--paper)}
+  .cmp td.seo{color:var(--dim)}
+  .cmp tr:last-child th,.cmp tr:last-child td{border-bottom:none}
+  /* CTA whatsapp */
+  .wa{position:relative;overflow:hidden;background:linear-gradient(150deg,rgba(255,77,0,.16),rgba(255,77,0,.04));border:1px solid rgba(255,106,43,.34);border-radius:20px;box-shadow:inset 0 1px 0 rgba(255,170,130,.2);padding:clamp(28px,5vw,44px);text-align:center;margin-top:8px}
+  .wa h3{font-family:var(--display);font-weight:600;font-size:clamp(24px,4vw,34px);letter-spacing:-0.03em;line-height:1.1;color:var(--paper)}
+  .wa h3 .o{color:var(--orange)}
+  .wa p{color:var(--dim);font-size:16.5px;line-height:1.6;max-width:46ch;margin:14px auto 0}
+  .wa-btn{display:inline-flex;align-items:center;gap:11px;margin-top:26px;background:var(--orange);color:#fff;font-family:var(--sans);font-weight:700;font-size:16px;padding:17px 30px;border-radius:50px;transition:transform .35s var(--ease),box-shadow .35s;box-shadow:0 14px 36px -12px rgba(255,77,0,.6)}
+  .wa-btn:hover{transform:translateY(-2px);box-shadow:0 22px 46px -12px rgba(255,77,0,.7)}
+  .wa-note{margin-top:16px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--faint)}
+  .faqg{border-top:1px solid var(--line)}
+  .faqg details{border-bottom:1px solid var(--line)}
+  .faqg summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 0;font-family:var(--sans);font-weight:600;font-size:clamp(16px,2vw,19px);color:var(--paper)}
+  .faqg summary::-webkit-details-marker{display:none}
+  .faqg summary::after{content:"+";color:var(--orange);font-size:24px;font-weight:400;transition:transform .3s}
+  .faqg details[open] summary::after{transform:rotate(45deg)}
+  .faqg .fa{padding-bottom:22px;color:var(--dim);font-size:15.5px;line-height:1.65;max-width:62ch}
+</style>
+</head>
+<body>
+
+<header class="m-header">
+  <div class="m-header-in">
+    <a href="/" class="m-brand"><img class="m-logo" src="/assets/logo.svg" alt="Matheus Moura" height="21" /><span class="m-tag">Guia de GEO</span></a>
+    <a href="/" class="m-back">← Voltar ao site</a>
+  </div>
+</header>
+
+<main class="doc">
+
+  <div class="doc-hero">
+    <span class="eyebrow">Guia · Generative Engine Optimization</span>
+    <h1>O que é GEO e por que<br>seu site precisa disso</h1>
+    <div class="author">
+      <img src="/assets/avatar-ring.png" alt="Matheus Moura" width="38" height="38" />
+      <span>por <b>Matheus Moura</b> <img class="vrf" src="/assets/verified.png" alt="" width="15" height="16" /> @matheusmoura.co</span>
+    </div>
+    <p class="geo-meta">Leitura de 4 minutos · Atualizado em junho de 2026</p>
+  </div>
+
+  <hr class="rule" />
+
+  <div class="def">
+    <b>GEO (Generative Engine Optimization)</b> é a otimização de um site para ser lido, entendido e citado pelos motores de inteligência artificial: ChatGPT, Gemini, Perplexity, Claude e o Google AI Overviews. É o equivalente ao SEO, só que para quando a pessoa pergunta a uma IA em vez de pesquisar no Google.
+  </div>
+
+  <hr class="rule" />
+
+  <section>
+    <h2 class="gh">Por que isso virou <span class="o">urgente</span></h2>
+    <p class="gp">Cada vez mais gente para de pesquisar no Google e começa a perguntar direto pra uma IA: "qual o melhor profissional pra isso?", "como eu resolvo aquilo?". A IA responde em texto e cita algumas poucas fontes.</p>
+    <p class="gp">Se o seu site <b>não está entre essas fontes</b>, você simplesmente não existe naquela resposta, mesmo que você seja a melhor opção do mercado. E o próprio Google já mostra uma resposta gerada por IA no topo da página (o AI Overviews), empurrando os links pra baixo.</p>
+    <div class="quote">No SEO você disputa um clique.<br>No GEO você disputa <span class="o">ser a resposta.</span></div>
+  </section>
+
+  <hr class="rule" />
+
+  <section>
+    <h2 class="gh">GEO e SEO não são a mesma coisa</h2>
+    <p class="gp">Eles andam juntos, mas resolvem problemas diferentes:</p>
+    <table class="cmp">
+      <thead><tr><th>&nbsp;</th><th class="seo">SEO</th><th class="o">GEO</th></tr></thead>
+      <tbody>
+        <tr><th>Onde aparece</th><td class="seo">Google, numa lista de links</td><td>Na resposta da IA</td></tr>
+        <tr><th>Objetivo</th><td class="seo">Rankear e ganhar o clique</td><td>Ser citado como fonte</td></tr>
+        <tr><th>Como buscam</th><td class="seo">Digitam palavras-chave</td><td>Fazem uma pergunta completa</td></tr>
+        <tr><th>O que pesa</th><td class="seo">Links, palavras-chave</td><td>Clareza, dados e ser citável</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr class="rule" />
+
+  <section>
+    <h2 class="gh">Como um site fica pronto pra GEO</h2>
+    <p class="gp">Nada disso muda o visual do site. É tudo estrutura, invisível pra quem visita e essencial pra IA:</p>
+    <ul class="glist">
+      <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="#FF4D00" stroke-width="1.4"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Liberar os robôs de IA</b> no robots.txt (GPTBot, PerplexityBot, ClaudeBot, Google-Extended e companhia). A IA só cita o que consegue ler.</span></li>
+      <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="#FF4D00" stroke-width="1.4"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Dados estruturados (schema)</b> que dizem à máquina quem você é, o que faz e como te encontrar.</span></li>
+      <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="#FF4D00" stroke-width="1.4"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Conteúdo no formato resposta-primeiro:</b> a pergunta no título, a resposta já na primeira frase. É assim que a IA extrai e cita.</span></li>
+      <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="#FF4D00" stroke-width="1.4"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Definições claras e frases citáveis</b>, além de um FAQ com o mesmo texto visível na página e no schema.</span></li>
+      <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="#FF4D00" stroke-width="1.4"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Consistência de nome e contato</b> no site, no Instagram e no Google. A IA cruza as fontes; divergência derruba a confiança.</span></li>
+    </ul>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- CTA WHATSAPP -->
+  <div class="wa">
+    <h3>Quer o seu site sendo <span class="o">citado pelas IAs?</span></h3>
+    <p>Eu cuido do GEO do seu site de ponta a ponta: robôs de IA liberados, dados estruturados, conteúdo citável e a sua marca clara pra ChatGPT, Gemini e Perplexity.</p>
+    <a class="wa-btn" href="https://wa.me/5511992644010?text=Ol%C3%A1%20Matheus%21%20Preciso%20de%20ajuda%20com%20o%20GEO%20do%20meu%20site." target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.35c0-4.54 3.7-8.23 8.24-8.23 4.54 0 8.23 3.69 8.23 8.23 0 4.54-3.69 8.24-8.23 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.25 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+      Falar com o Matheus no WhatsApp
+    </a>
+    <div class="wa-note">Resposta direta comigo, sem robô.</div>
+  </div>
+
+  <hr class="rule" />
+
+  <!-- FAQ -->
+  <div class="section-label">Perguntas frequentes</div>
+  <div class="faqg">
+    <details>
+      <summary>GEO substitui o SEO?</summary>
+      <div class="fa">Não. O GEO anda junto com o SEO. O SEO continua valendo para o Google tradicional; o GEO garante que a IA também encontre e cite o seu site. As duas frentes usam a mesma base técnica e se reforçam.</div>
+    </details>
+    <details>
+      <summary>Quanto tempo leva para ver resultado com GEO?</summary>
+      <div class="fa">Algumas semanas. As IAs precisam re-rastrear e reindexar o site depois das alterações. A otimização constrói a fundação; os resultados aparecem conforme os robôs voltam e encontram a entidade clara e o conteúdo citável.</div>
+    </details>
+    <details>
+      <summary>Preciso de GEO se já faço SEO?</summary>
+      <div class="fa">Sim. O SEO te coloca na lista do Google, mas não garante que a IA te cite. Com cada vez mais gente perguntando direto pra IA, ficar de fora dessas respostas é perder cliente sem nem saber.</div>
+    </details>
+    <details>
+      <summary>Qualquer site pode ser otimizado para GEO?</summary>
+      <div class="fa">Sim. Sites institucionais, lojas, portfólios e páginas de profissionais podem ser otimizados. O essencial é ter o conteúdo importante em texto legível, dados estruturados corretos e os robôs de IA liberados.</div>
+    </details>
+  </div>
+
+</main>
+
+<footer class="m-footer">
+  <div class="m-footer-in">
+    <a href="/" class="m-brand"><img class="m-logo" src="/assets/logo.svg" alt="Matheus Moura" height="21" /><span class="m-tag">Método Tração®</span></a>
+    <p class="m-foot-note">Presença digital com tração: das pessoas certas chegando até o cliente fechando.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Audite seu site com IA | Matheus Moura</title>
+<meta name="description" content="O prompt pronto pra colar no ChatGPT ou Claude e receber uma auditoria completa de responsividade, performance e SEO do seu site." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0D0D0D" />
+<meta name="color-scheme" content="dark" />
+<link rel="canonical" href="https://www.matheusmoura.com.br/manual/auditoria-site.html" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.matheusmoura.com.br/manual/auditoria-site.html" />
+<meta property="og:title" content="Audite seu site com IA" />
+<meta property="og:description" content="O prompt pronto pra rodar a auditoria técnica do seu site." />
+<meta property="og:image" content="https://www.matheusmoura.com.br/assets/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.matheusmoura.com.br/assets/og-image.jpg" />
+<link rel="icon" href="/assets/favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+<link rel="preload" href="/assets/fonts/geist-600.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/assets/manual.css" />
+<style>
+.codeblock{position:relative;background:var(--ink-2);border:1px solid var(--line-2);border-radius:16px;overflow:hidden;margin-top:8px}
+.codeblock .cb-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line);background:rgba(245,241,234,.03)}
+.codeblock .cb-bar .cb-label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.copy-code{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;font-family:var(--sans);font-weight:600;font-size:13px;border-radius:9px;padding:9px 16px;cursor:pointer;transition:transform .3s var(--ease),background .25s;min-height:40px}
+.copy-code:hover{transform:translateY(-1px)}
+.copy-code.done{background:var(--green)}
+.codeblock pre{margin:0;padding:20px 18px;font-family:var(--mono);font-size:13px;line-height:1.65;color:var(--paper);white-space:pre-wrap;max-height:380px;overflow:auto}
+.codeblock pre b{color:var(--orange);font-weight:500}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.matheusmoura.com.br/"},{"@type":"ListItem","position":2,"name":"Recursos grátis","item":"https://www.matheusmoura.com.br/manual/"},{"@type":"ListItem","position":3,"name":"Audite seu site com IA","item":"https://www.matheusmoura.com.br/manual/auditoria-site.html"}]}
+</script>
+</head>
+<body>
+
+<header class="m-header">
+  <div class="m-header-in">
+    <a href="/manual/" class="m-brand"><img class="m-logo" src="/assets/logo.svg" alt="Matheus Moura" height="21" /><span class="m-tag">Recurso grátis</span></a>
+    <a href="/manual/" class="m-back">← Recursos</a>
+  </div>
+</header>
+
+<main class="doc">
+
+  <div class="doc-hero">
+    <span class="eyebrow">Método Tração · Tração</span>
+    <h1>Audite seu site<br>com IA</h1>
+    <div class="author">
+      <img src="/assets/avatar-ring.webp" alt="Matheus Moura" width="38" height="38" />
+      <span>por <b>Matheus Moura</b> <img class="vrf" src="/assets/verified.png" alt="" width="15" height="16" /> @matheusmoura.co</span>
+    </div>
+    <p class="lead">Seu site pode estar afastando cliente sem você saber: lento, quebrado no celular ou invisível no Google. <b>Cola esse prompt no ChatGPT ou no Claude</b> com o link do seu site e descubra.</p>
+  </div>
+
+  <hr class="rule" />
+
+  <div class="def">
+    Esse é o mesmo checklist que eu uso pra auditar um site: <b>responsividade, performance (Core Web Vitals) e SEO técnico</b>. A IA vai te devolver um relatório por prioridade. Pra aplicar as correções de verdade, sem quebrar nada, é outra história.
+  </div>
+
+  <hr class="rule" />
+
+  <div class="section-label">O prompt · cole no ChatGPT ou Claude</div>
+  <div class="codeblock">
+    <div class="cb-bar">
+      <span class="cb-label">Prompt de auditoria</span>
+      <button class="copy-code" id="copyBtn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="11" height="11" rx="2" stroke="#fff" stroke-width="1.7"/><path d="M5 15V5a2 2 0 012-2h10" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/></svg>
+        Copiar prompt
+      </button>
+    </div>
+    <pre id="promptText">Analise todo este site e faça uma auditoria completa de responsividade, performance e SEO técnico. Depois aplique as correções.
+
+Site: [COLE A URL DO SEU SITE AQUI]
+
+RESPONSIVIDADE (mobile e tablet):
+1. Verifique todos os breakpoints. Garanta que o layout funciona em 360px, 390px, 768px, 1024px e 1440px.
+2. Corrija qualquer overflow horizontal (scroll lateral indesejado).
+3. Garanta que imagens usam max-width: 100% e height: auto.
+4. Botões e links com área de toque mínima de 44x44px.
+5. Fontes legíveis no mobile (mínimo 16px no body, sem zoom forçado).
+6. Menu hambúrguer funcional.
+7. Verifique a meta viewport no head.
+8. Tabelas e grids devem empilhar ou ter scroll próprio no mobile.
+
+PERFORMANCE / CORE WEB VITALS:
+1. Otimize o LCP: imagem principal com fetchpriority="high" e preload das fontes críticas.
+2. Converta imagens para WebP/AVIF com srcset e lazy loading (exceto a imagem do hero).
+3. Elimine CLS: defina width e height em todas as imagens.
+4. Inline o CSS crítico e adie o CSS/JS não crítico.
+5. Remova bibliotecas e scripts não utilizados.
+
+SEO TÉCNICO:
+1. Title e meta description únicos em cada página (title até 60 caracteres, description até 155).
+2. Hierarquia correta de headings (um único H1 por página).
+3. Alt text descritivo em todas as imagens.
+4. Schema markup (JSON-LD) adequado ao tipo de negócio.
+5. Open Graph e Twitter Cards configurados.
+6. Canonical tags, sitemap.xml e robots.txt.
+7. URLs amigáveis e links internos com anchor text descritivo.
+
+Antes de alterar qualquer coisa, me mostre um relatório do que encontrou, organizado por prioridade (crítico, importante, melhoria). Depois que eu aprovar, aplique as correções uma seção por vez.</pre>
+  </div>
+
+  <hr class="rule" />
+
+  <div class="regras">
+    <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7.5" stroke="#FF4D00" stroke-width="1.6"/><path d="M16.5 16.5L21 21" stroke="#FF4D00" stroke-width="1.7" stroke-linecap="round"/></svg> Como usar em 3 passos</h3>
+    <ul>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#FF4D00" stroke-width="1.4"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Copie o prompt</b> no botão acima e cole no ChatGPT ou no Claude.</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#FF4D00" stroke-width="1.4"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Troque o [COLE A URL]</b> pelo endereço do seu site e envie.</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#FF4D00" stroke-width="1.4"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Leia o relatório.</b> Você vai ver, por prioridade, o que está afastando cliente do seu site.</span></li>
+    </ul>
+  </div>
+
+  <hr class="rule" />
+
+  <!-- CTA -->
+  <div class="wa">
+    <h3>Achar o problema é fácil. <span class="o">Corrigir sem quebrar é comigo.</span></h3>
+    <p>A IA aponta. Aplicar as correções, otimizar de verdade e ainda deixar o site sendo achado por pessoas e por IA é trabalho técnico. Me manda o link do seu site que eu faço a auditoria e arrumo pra você.</p>
+    <a class="wa-btn" href="https://wa.me/5511992644010?text=Ol%C3%A1%20Matheus%21%20Rodei%20a%20auditoria%20no%20meu%20site%20e%20quero%20que%20voc%C3%AA%20corrija%20pra%20mim." target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.35c0-4.54 3.7-8.23 8.24-8.23 4.54 0 8.23 3.69 8.23 8.23 0 4.54-3.69 8.24-8.23 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.25 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+      Quero que você audite e corrija
+    </a>
+    <div class="wa-note">Resposta direta comigo, sem robô.</div>
+  </div>
+
+</main>
+
+<footer class="m-footer">
+  <div class="mf-in">
+    <a href="/" class="m-brand"><img class="m-logo" src="/assets/logo.svg" alt="Matheus Moura" height="21" /><span class="m-tag">Método Tração®</span></a>
+    <p>© 2026 · A maioria acelera. Quase ninguém ganha <span class="o">tração.</span></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('copyBtn');
+  btn.addEventListener('click',function(){
+    var t=document.getElementById('promptText').textContent;
+    function done(){btn.classList.add('done');btn.lastChild.textContent=' Copiado!';setTimeout(function(){btn.classList.remove('done');btn.lastChild.textContent=' Copiar prompt';},2200);}
+    function fb(){var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);done();}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(fb);}else{fb();}
+  });
+})();
+</script>
+</body>
+</html>
